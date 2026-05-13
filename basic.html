@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Login page</title>
+    </head>
+
+    <body>
+        <form onsubmit="handleClick(event)" style="margin-left:40%; margin-top:200px;border: 1px solid black;width: 400px;display: flex;flex-direction: column;align-items: center;">
+            <h1>Login Page</h1>
+            <p>To get started  </p>
+
+          <div> <label>Username: </label> <input id="username" type="text" required="true"></div>
+           <br/>
+           <br>
+        <div> <label>Email:   </label><input id="email" type="email"/></div>
+           <br>
+           <br>
+        <div><label>Password: </label><input id="password" type="Password"></div>
+           <br>
+           <br>
+           <button type="submit"  style="background-color: rgb(104, 176, 68); color: white; width:250px;height: 25px;">Continue</button>
+           
+        </form>
+    </body>
+    <script>
+        function handleClick(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            alert(`Username: ${username}, email: ${password}, password: ${password}`);
+        }
+    </script>
+</html>
