@@ -7,7 +7,7 @@ match n:
     case 1:
         print("Sum of the number",a,"and",b,"= ",a+b)
     case 2:
-        print("Subtractilon of the number",a,"and",b,"=",a-b)
+        print("Subtraction of the number",a,"and",b,"=",a-b)
     case 3:
         print("Product of the number",a,"and",b,"= ",a*b)
     case 4:
